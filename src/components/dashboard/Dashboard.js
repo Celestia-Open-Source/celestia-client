@@ -17,7 +17,7 @@ class Dashboard extends Component {
       <Row justify="center" style={{ margin: "4em 2rem" }}>
         <Col span={10}>
           <h1>
-            <b>Hello,</b> {user.name.split(" ")[0]}
+            <b>Hello,</b> {user.username}
             <p className="flow-text grey-text text-darken-1">
               You are logged into this{" "} app.
               </p>

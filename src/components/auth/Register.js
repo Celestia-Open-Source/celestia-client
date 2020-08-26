@@ -51,7 +51,7 @@ class Register extends Component {
   onSubmit = e => {
 
     const newUser = {
-      name: this.state.name,
+      username: this.state.username,
       email: this.state.email,
       password: this.state.password,
       password2: this.state.password2
@@ -89,18 +89,18 @@ class Register extends Component {
             onFinishFailed={this.onFinishFailed}
           >
             <Form.Item
-              label="name"
-              name="name"
-              rules={[{ required: true, message: 'Please input your name!' }]}
+              label="username"
+              name="username"
+              rules={[{ required: true, message: 'Please input your username!' }]}
             >
               <Input
                 onChange={this.onChange}
-                value={this.state.name}
-                error={errors.name}
-                id="name"
+                value={this.state.username}
+                error={errors.username}
+                id="username"
                 type="text"
                 className={classnames("", {
-                  invalid: errors.name
+                  invalid: errors.username
                 })}
 
               />
